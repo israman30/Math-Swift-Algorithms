@@ -22,3 +22,6 @@ pow(3, 2)
 // Square root of #
 sqrt(9)
 
+// We will divide a number and get the reminder of that number
+
+
