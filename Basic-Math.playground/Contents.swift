@@ -14,5 +14,7 @@ import UIKit
 var number1 = 2
 var number2 = 3
 
-let resta = number1 / number2
-Double(resta)
+let resta = number2 / number1
+
+
+
