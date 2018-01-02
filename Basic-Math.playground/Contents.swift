@@ -33,3 +33,9 @@ func divide(x: Int, y: Int)-> (Int, Int){
 // This result will return a tupple of (.02, .10)
 divide(x: 6, y: 3)
 
+
+// Adding a sequence or collection of numbers
+func adding(n: [Int]){
+    
+}
+adding(n: [1,2,3,4])
