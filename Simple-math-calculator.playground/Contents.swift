@@ -3,6 +3,7 @@
 import UIKit
 
 // We will use two cases with if and switch statement
+// We will using float type because this will give us a value with near round decimal value
 
 // Simple Caculator with switch statement
 func simpleCalculator(x: Float, y: Float, operand: String)-> Float {
