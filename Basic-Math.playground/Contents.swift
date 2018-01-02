@@ -35,11 +35,32 @@ divide(x: 6, y: 3)
 
 
 // Adding a sequence or collection of numbers
-func adding(n: [Int])->Int{
+func adding(n: [Int])->Int {
     var sum = 0
     n.forEach { (num) in
         sum += num
     }
     return sum
 }
-adding(n: [1,2,3,4])
+
+// The result will be the addition of all the elements in the array, in this case will be 10
+adding(n: [1, 2, 3, 4])
+
+// Using a foor in loop
+func addingNumber(n: [Int])-> Int {
+    var sum = 0
+    for i in n {
+        sum += i
+    }
+    return sum
+}
+
+// Will be same answer, 10
+addingNumber(n: [1, 2, 3, 4])
+
+
+
+
+
+
+
