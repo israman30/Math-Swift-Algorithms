@@ -67,6 +67,7 @@ func multiply(n: [Int])->Int {
     return sum
 }
 
+// Anwers, 24
 multiply(n: [1, 2, 3, 4])
 
 
