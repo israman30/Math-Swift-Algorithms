@@ -22,17 +22,6 @@ pow(3, 2)
 // Square root of #
 sqrt(9)
 
-// We will divide a number and get the reminder of that number
-// Function Tupple as return value
-func divide(x: Int, y: Int)-> (Int, Int){
-    let quotient =  x / y
-    let reminder =  x % y
-    return (quotient, reminder)
-}
-
-// This result will return a tupple of (.02, .10)
-divide(x: 6, y: 3)
-
 
 // Adding a sequence or collection of numbers
 func adding(n: [Int])->Int {
@@ -69,6 +58,27 @@ func multiply(n: [Int])->Int {
 
 // Anwers, 24
 multiply(n: [1, 2, 3, 4])
+
+// Dividing two numbers
+func divideNumber(a: Int, b: Int)-> Int {
+    return a / b
+}
+
+// This will return a single value as Int, in this case will be 1
+divideNumber(a: 5, b: 4)
+
+
+// We will divide a number and get the reminder of that number
+// Function Tupple as return value
+func divide(x: Int, y: Int)-> (Int, Int){
+    let quotient =  x / y
+    let reminder =  x % y
+    return (quotient, reminder)
+}
+
+// This result will return a tupple of (.02, .10)
+divide(x: 6, y: 3)
+
 
 
 
