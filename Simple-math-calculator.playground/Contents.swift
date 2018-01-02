@@ -25,7 +25,6 @@ func simpleCalculator(x: Float, y: Float, operand: String)-> Float {
 
 
 // With if ,else if statement
-
 func swiftCalculator(x: Float, y: Float, operand: String)-> Float {
     var result: Float = 0.0
     if operand == "+" {
@@ -41,9 +40,14 @@ func swiftCalculator(x: Float, y: Float, operand: String)-> Float {
 }
 
 // Unit converter
-func unitConverter(value: Float, from: String, to: String){
+func unitConverter(value: Float, from: String, to: String)-> Float{
     // TODO
+    var result: Float = 0.0
+    result = value * (9 / 5 + 32)
+    return result
 }
+
+unitConverter(value: 5, from: "Fahrenheit", to: "Celsius")
 
 
 
