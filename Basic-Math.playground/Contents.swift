@@ -23,5 +23,13 @@ pow(3, 2)
 sqrt(9)
 
 // We will divide a number and get the reminder of that number
+// Function Tupple as return value
+func divide(x: Int, y: Int)-> (Int, Int){
+    let quotient =  x / y
+    let reminder =  x % y
+    return (quotient, reminder)
+}
 
+// This result will return a tupple of (.02, .10)
+divide(x: 6, y: 3)
 
