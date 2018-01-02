@@ -40,6 +40,9 @@ func swiftCalculator(x: Float, y: Float, operand: String)-> Float {
 }
 
 // Unit converter
+func unitConverter(value: Float, from: String, to: String){
+    // TODO
+}
 
 
 
