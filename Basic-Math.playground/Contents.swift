@@ -58,8 +58,16 @@ func addingNumber(n: [Int])-> Int {
 // Will be same answer, 10
 addingNumber(n: [1, 2, 3, 4])
 
+// Multiplying the same sequence or collection of numbers
+func multiply(n: [Int])->Int {
+    var sum = 1
+    n.forEach { (num) in
+        sum *= num
+    }
+    return sum
+}
 
-
+multiply(n: [1, 2, 3, 4])
 
 
 
