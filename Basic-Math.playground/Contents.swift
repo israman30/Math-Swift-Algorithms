@@ -17,9 +17,11 @@ var number2 = 3
 let resta = number2 / number1
 
 // Power of usgin Swift property pow()
+// This returns 9
 pow(3, 2)
 
 // Square root of #
+// This returns 3
 sqrt(9)
 
 
