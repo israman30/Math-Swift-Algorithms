@@ -19,3 +19,6 @@ let resta = number2 / number1
 // Power of usgin Swift property pow()
 pow(3, 2)
 
+// Square root of #
+sqrt(9)
+
