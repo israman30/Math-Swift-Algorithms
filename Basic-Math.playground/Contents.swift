@@ -16,5 +16,6 @@ var number2 = 3
 
 let resta = number2 / number1
 
-
+// Power of usgin Swift property pow()
+pow(3, 2)
 
