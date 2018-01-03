@@ -41,14 +41,19 @@ func swiftCalculator(x: Float, y: Float, operand: String)-> Float {
 
 // Unit converter
 // Fahrenheit To Celsius
-func fahrenheitToCelsius(value: Float)-> Float{
+func fahrenheitToCelsius(value: Float)-> Float {
     var result: Float = 0.0
         result = value * (9 / 5 + 32)
     return result
 }
 
-fahrenheitToCelsius(value: 5)
 
+// Celsius To Fahrenheit
+func celsiusToFahrenheit(value: Float)-> Float {
+    var result: Float = 0.0
+    result = (value - 32) * 5 / 9
+    return result
+}
 
 
 
