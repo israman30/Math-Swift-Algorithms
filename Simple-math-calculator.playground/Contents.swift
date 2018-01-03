@@ -43,10 +43,10 @@ func swiftCalculator(x: Float, y: Float, operand: String)-> Float {
 func unitConverter(value: Float, from: String, to: String)-> Float{
     // TODO
     var result: Float = 0.0
-    let fahrenheit = from.lowercased().uppercased().enumerated()
-    let far = String(describing: fahrenheit)
-    if far == "Fahrenheit" {
+    if from == "Fahrenheit" && to == "Celsius"{
         result = value * (9 / 5 + 32)
+    } else if from == "Celsius" {
+        result = (value - 32) * 5 / 9
     }
     return result
 }
