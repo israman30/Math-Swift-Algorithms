@@ -22,6 +22,7 @@ import UIKit
 
 
 // TRIANGLE RECTANGLE - PITAGORAS THEOREM
+// Type Float will give us a rounded value
 func triangleRectangle(hyp: Float, cat1: Float, cat2: Float)-> Float {
     var result: Float = 0.0
     if cat1 == 0 {
@@ -33,6 +34,6 @@ func triangleRectangle(hyp: Float, cat1: Float, cat2: Float)-> Float {
     }
     return result
 }
-triangleRectangle(hyp: 8, cat1: 0, cat2: 5)
+
 
 
