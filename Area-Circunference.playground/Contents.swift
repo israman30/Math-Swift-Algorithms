@@ -13,3 +13,9 @@ class Shape {
     }
 }
 
+class Triangle: Shape {
+    
+    override func shape(a: Float, b: Float) -> Float {
+        return (b * a) / 2
+    }
+}
