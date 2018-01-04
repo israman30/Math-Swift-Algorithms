@@ -32,3 +32,8 @@ class CircumferenceOfCircle: Shape {
     }
 }
 
+class RectangleArea: Shape {
+    override func shape(a: Float, b: Float) -> Float {
+        return a * b
+    }
+}
