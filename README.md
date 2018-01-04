@@ -1,6 +1,9 @@
 
 # Swift Algorithms
 This is a math repo that contains variuos types of algorithm to solve mathematical, geometrical and trigonometric problems by the creator and contributors listed at the bottom of the oage.
+
+###### Created by:
+##### Israel Manzo
 # Prerequisites
 iOS or any oriented programming language.
 ## Sample
