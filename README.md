@@ -18,5 +18,5 @@ We will be using function, classes and extensions to solve multiple situations a
 - Israel Manzo
 
 # Licence
-Copyright by, @sisraman® 2017
+Copyright by, @israman® 2017
 
