@@ -19,3 +19,9 @@ class Triangle: Shape {
         return (b * a) / 2
     }
 }
+
+class SquareArea: Shape {
+    override func shape(a: Float, b: Float = 0) -> Float {
+        return pow(a, 2)
+    }
+}
