@@ -37,3 +37,10 @@ class RectangleArea: Shape {
         return a * b
     }
 }
+
+class AreaOfCircle: Shape {
+    override func shape(a: Float, b: Float = 0) -> Float {
+        return pow(a, 2) * 3.14
+    }
+}
+
