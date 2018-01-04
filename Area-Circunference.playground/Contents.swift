@@ -25,3 +25,10 @@ class SquareArea: Shape {
         return pow(a, 2)
     }
 }
+
+class CircumferenceOfCircle: Shape {
+    override func shape(a: Float, b: Float = 0) -> Float {
+        return 2 * 3.14 * a
+    }
+}
+
