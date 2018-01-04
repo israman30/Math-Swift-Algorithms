@@ -6,7 +6,7 @@ iOS or any oriented programming language.
 ## Sample
 ```
 func sumOfFirstThreeNumbers(n: Int)-> Int{
-return n * (n + 1) / 2
+    return n * (n + 1) / 2
 }
 ```
 # Technology
