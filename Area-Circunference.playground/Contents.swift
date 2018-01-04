@@ -2,4 +2,14 @@
 
 import UIKit
 
+// WE USE A SHAPE CLASS TO REFER TO ANY FIGURE "GLOBAL CLASS"
+class Shape {
+    public func shape(a: Float, b: Float)-> Float{
+        return 0.0
+    }
+    
+    deinit {
+        print("Deinit")
+    }
+}
 
