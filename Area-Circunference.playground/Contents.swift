@@ -52,29 +52,29 @@ class Cylinder: Shape {
 
 // CILINDER AREA
 let cylinder = Cylinder()
-cylinder.shape(a: 3.2, b: 2.1)
+cylinder.shape(a: 3.2, b: 2.1) // R.106.5088
 
 // AREA OF A CRICLE
 let circleArea = AreaOfCircle()
-circleArea.shape(a: 3.6)
+circleArea.shape(a: 3.6) // R. 40.6944
 
 // RECTANGLE AREA
 let rectangle = RectangleArea()
-rectangle.shape(a: 5, b: 4)
+rectangle.shape(a: 5, b: 4) // R. 20
 
 // CRICUNFERENCE OF A CIRCLE
 let circumference = CircumferenceOfCircle()
-circumference.shape(a: 2.3)
+circumference.shape(a: 2.3) // R. 14.444
 
 // AREA OF A SQUARE
 let square = SquareArea()
-square.shape(a: 5)
+square.shape(a: 5) // R. 25
 
 // AREA OF A TRIANGLE
 let triangle = Triangle()
-triangle.shape(a: 34.52, b: 23.5)
+triangle.shape(a: 34.52, b: 23.5) // R. 405.61
 
 let shape = Triangle()
-shape.shape(a: 2.5, b: 3)
+shape.shape(a: 2.5, b: 3) // R. 3.75
 
 
