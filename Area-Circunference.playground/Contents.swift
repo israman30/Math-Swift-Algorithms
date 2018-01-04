@@ -49,3 +49,32 @@ class Cylinder: Shape {
         return (2 * 3.14 * a * b) + (2 * 3.14 * pow(a, 2))
     }
 }
+
+// CILINDER AREA
+let cylinder = Cylinder()
+cylinder.shape(a: 3.2, b: 2.1)
+
+// AREA OF A CRICLE
+let circleArea = AreaOfCircle()
+circleArea.shape(a: 3.6)
+
+// RECTANGLE AREA
+let rectangle = RectangleArea()
+rectangle.shape(a: 5, b: 4)
+
+// CRICUNFERENCE OF A CIRCLE
+let circumference = CircumferenceOfCircle()
+circumference.shape(a: 2.3)
+
+// AREA OF A SQUARE
+let square = SquareArea()
+square.shape(a: 5)
+
+// AREA OF A TRIANGLE
+let triangle = Triangle()
+triangle.shape(a: 34.52, b: 23.5)
+
+let shape = Triangle()
+shape.shape(a: 2.5, b: 3)
+
+
