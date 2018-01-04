@@ -44,3 +44,8 @@ class AreaOfCircle: Shape {
     }
 }
 
+class Cylinder: Shape {
+    override func shape(a: Float, b: Float) -> Float {
+        return (2 * 3.14 * a * b) + (2 * 3.14 * pow(a, 2))
+    }
+}
