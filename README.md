@@ -4,8 +4,8 @@ This is a math repo that contains variuos types of algorithm to solve mathematic
 
 ###### Created by:
 >  Israel Manzo
-# Prerequisites
-iOS or any oriented programming language.
+# Pre-requisites
+###### iOS or any oriented programming language.
 ## Sample
 ```
 func sumOfFirstThreeNumbers(n: Int)-> Int{
