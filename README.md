@@ -5,6 +5,7 @@ This is a math repo that contains variuos types of **algorithm** to solve mathem
 ###### Created by:
 >  Israel Manzo
 # Pre-requisites
+###### All Levels, mathematics calculations knowledge.
 ###### iOS technology, or any oriented programming language.
 ## Sample
 ```
