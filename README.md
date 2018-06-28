@@ -19,8 +19,9 @@ func sumOfFirstThreeNumbers(n: Int)-> Int{
 ```
 # Technology
 
-Xcode playground.
-We are using apple Swift programming language. As contributor could be with Objective-C as well.
+- Xcode playground.
+
+- We are using apple Swift programming language. As contributor could be with Objective-C as well.
 
 
 # Contributors
