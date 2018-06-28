@@ -14,8 +14,7 @@ func sumOfFirstThreeNumbers(n: Int)-> Int{
 ```
 # Technology
 We are using apple Swift programming language. As contributor could be with Objective-C as well.
-## API reference
-We will be using function, classes and extensions to solve multiple situations and to make our code re-usable.
+
 
 # Contributors
 - Israel Manzo
