@@ -12,7 +12,7 @@ This is a math repo that contains variuos types of **algorithm** to solve mathem
 ###### iOS technology, or any oriented programming language.
 ## Sample
 
-```
+``` swift
 func sumOfFirstThreeNumbers(n: Int)-> Int{
     return n * (n + 1) / 2
 }
