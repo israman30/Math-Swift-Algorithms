@@ -86,10 +86,10 @@ func reversingString(string: String) -> String {
 
 > Reversing a string swapping the first and last index of the string
 
-- "string" -> convert into an array ["s", "t", "r", "i", "n", "g"]
-- capture first and last index then swap
-- first += 1 && last -= 1
-- convert the array back into a string then return it
+###### - "string" -> convert into an array ["s", "t", "r", "i", "n", "g"]
+###### - capture first and last index then swap
+###### - first += 1 && last -= 1
+###### - convert the array back into a string then return it
 
 
 
