@@ -51,7 +51,7 @@ func reversingArray(array: [Int])->[Int]?{
 
         first += 1
         last -= 1
-        }
+    }
     return array
 }
 ```
