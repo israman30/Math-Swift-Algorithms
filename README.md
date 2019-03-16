@@ -40,7 +40,7 @@ func sumOfFirstThreeNumbers(n: Int)-> Int{
 ###### a += 1 && b -= 1
 
 
-```
+``` swift
 
 func reversingArray(array: [Int])->[Int]?{
     var array = array
@@ -63,8 +63,7 @@ func reversingArray(array: [Int])->[Int]?{
 > Reversing a string
 ###### Reversing replacing the first and last index of the string
 
-```
-
+``` swift
 
 func reversingString(string: String) -> String {
     var string = Array(string)
@@ -93,9 +92,7 @@ func reversingString(string: String) -> String {
 
 
 
-```
-
-
+``` swift
 func reversingSwapString(string: String) -> String {
     var string = Array(string)
     var first = 0
