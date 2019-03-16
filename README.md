@@ -30,16 +30,18 @@ func sumOfFirstThreeNumbers(n: Int)-> Int{
 
 ## Reversing an array of integers
 
-```
-// Reversing an array on integers
-/*
+> Reversing an array on integers
+>>
 array[1,2,3,4]
 a = 0, b.count - 1, c = 0
 c = a
 a = b
 c = b
 a += 1 && b -= 1
-*/
+
+
+```
+
 func reversingArray(array: [Int])->[Int]?{
     var array = array
     var first = 0
