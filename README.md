@@ -60,9 +60,11 @@ func reversingArray(array: [Int])->[Int]?{
 
 ## Reversing a string
 
+> Reversing a string
+###### Reversing replacing the first and last index of the string
+
 ```
-// Reversing a string
-// Reversing replacing the first and last index of the string
+
 
 func reversingString(string: String) -> String {
     var string = Array(string)
@@ -82,15 +84,17 @@ func reversingString(string: String) -> String {
 
 ## Reversing a string using swapAt()
 
-```
+> Reversing a string swapping the first and last index of the string
 
-// Reversing a string swapping the first and last index of the string
-/*
 - "string" -> convert into an array ["s", "t", "r", "i", "n", "g"]
 - capture first and last index then swap
 - first += 1 && last -= 1
 - convert the array back into a string then return it
-*/
+
+
+
+```
+
 
 func reversingSwapString(string: String) -> String {
     var string = Array(string)
