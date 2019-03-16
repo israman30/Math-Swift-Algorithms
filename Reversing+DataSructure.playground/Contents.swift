@@ -66,5 +66,22 @@ func reversingSwapString(string: String) -> String {
     return String(string)
 }
 
+// Reversing with generics
+// This function will use a better time complexity using generic values
+// O(log n)
+/*
+    array[1, 2, 3, 4] / 2
+    array[1, 2], array.count - 1 - i[3, 4]
+    array[i] swapAt() array[array.count - 1 - i]
+ */
+func reverse<T>(array: [T]) -> [T]{
+    var array = array
+    for i in 0..<array.count / 2 {
+        array.swapAt(i, array.count - 1 - i)
+    }
+    return array
+}
+reverse(array: [1, 2, 3, 4])
+reverse(array: ["1","2","3"])
 
 
