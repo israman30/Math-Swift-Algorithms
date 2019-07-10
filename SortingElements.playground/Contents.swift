@@ -22,6 +22,10 @@ import UIKit
             [0, 1, 2, 3, 4, 5, 5, 6, 7, 7]
  */
 
+/*
+  - Merge function takes an array and cut it using recursion.
+  - When the array is cut it we create two arrays, left and right everytime the function is called.
+ */
 func mergeSort(arr: [Int]) -> [Int] {
     guard arr.count > 1 else { return arr }
     
@@ -31,6 +35,12 @@ func mergeSort(arr: [Int]) -> [Int] {
     return sort(left: left, right: right)
 }
 
+/*
+ - sort function takes left and right array from the cut array.
+ - From each side, compare the first element of the arrays and depending on the condition we pull the first element,
+ and appended to a container.
+ - In the return the container is added with the reminders of the left and right arrays.
+ */
 func sort(left: [Int], right: [Int]) -> [Int] {
     var mergedArray = [Int]()
     var left = left
@@ -45,3 +55,5 @@ func sort(left: [Int], right: [Int]) -> [Int] {
     }
     return mergedArray + left + right
 }
+
+
