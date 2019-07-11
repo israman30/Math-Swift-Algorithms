@@ -19,7 +19,7 @@ import UIKit
  
  */
 
-func insertSort(array: [Int]) -> [Int] {
+func insertioinSort<T: Comparable>(array: [T]) -> [T] {
     var a = array
     for i in 0..<a.count {
         var j = i
