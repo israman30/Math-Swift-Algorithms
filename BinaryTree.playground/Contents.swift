@@ -32,6 +32,7 @@ class BinaryTree {
     init(value: Int) {
         self.value = value
     }
+    var queue = Queue<BinaryTree>()
 }
 
 // =========================== Binary Tree methods ===========================
@@ -267,5 +268,124 @@ extension BinaryTree {
         
         return inorder
     }
+    
+    // Preorder traverse
+    func printPreorderTraverse(parent: BinaryTree?) {
+        print(value)
+        if left != nil {
+            left?.printPreorderTraverse(parent: parent?.left)
+        }
+        if right != nil {
+            right?.printPreorderTraverse(parent: parent?.right)
+        }
+    }
+    
+    func preorderTraverseWithClouser(visit: (Int) -> ()) {
+        visit(value)
+        left?.preorderTraverseWithClouser(visit: visit)
+        right?.preorderTraverseWithClouser(visit: visit)
+    }
+    
+    func preorderAndReturnArray(parent: BinaryTree?) -> [Int] {
+        if parent == nil {
+            return []
+        }
+        var preorder = [Int]()
+        preorder.append(parent!.value)
+        preorder += preorderAndReturnArray(parent: parent!.left)
+        preorder += preorderAndReturnArray(parent: parent!.right)
+        
+        return preorder
+    }
+    
+    // Postorder traverse
+    func printPostorderTraverse(parent: BinaryTree?) {
+        if left != nil {
+            left?.printPostorderTraverse(parent: parent?.left)
+        }
+        if right != nil {
+            right?.printPostorderTraverse(parent: parent?.right)
+        }
+        print(value)
+    }
+    
+    func postorderTraverseWithClouser(visit: (Int) -> ()) {
+        left?.postorderTraverseWithClouser(visit: visit)
+        right?.postorderTraverseWithClouser(visit: visit)
+        visit(value)
+    }
+    
+    func postorderAndReturnArray(parent: BinaryTree?) -> [Int] {
+        if parent == nil {
+            return []
+        }
+        var postorder = [Int]()
+        postorder += postorderAndReturnArray(parent: parent!.left)
+        postorder += postorderAndReturnArray(parent: parent!.right)
+        postorder.append(parent!.value)
+        
+        return postorder
+    }
+    
+    // =================================================================
+    // Converte an array into a tree
+    //  array = [2, 3, 4, 5, 6, 7, 8]
+    //      5
+    //     /  \
+    //    4    6
+    //   /  \  / \
+    //  2   3  7  8
+     
+    func binaryTreeArray(_ array: [Int], _ firstIndex: Int, _ lastIndex: Int) -> BinaryTree? {
+        if firstIndex > lastIndex {
+            return nil
+        }
+        let midIndex = (firstIndex + lastIndex) / 2
+        let node = BinaryTree(value: array[midIndex])
+        
+        node.left = binaryTreeArray(array, firstIndex, midIndex - 1)
+        node.right = binaryTreeArray(array, midIndex + 1, lastIndex)
+        
+        return node
+    }
+    /*
+     First index have to be less than last index, else return nil
+     Construct a node value using midIndex
+     assign left/right checking first index with last index using recursion
+     **/
+    
 }
+
+// Levelorder traverse using a Queue class
+class Queue<T> {
+    var array = [T]()
+    func add(value: T) {
+        array.append(value)
+    }
+    func dequeue() -> T? {
+        let deque = array.removeFirst()
+        return deque as! T
+    }
+}
+
+extension BinaryTree {
+    
+    func levelOrder() {
+        guard let node = self.parent else { return }
+        
+        queue.add(value: node)
+        
+        while !queue.array.isEmpty {
+            guard let dequeue = queue.dequeue() else { return }
+            
+            if let leftNode = dequeue.left {
+                queue.add(value: leftNode)
+            }
+            if let rightNode = dequeue.right {
+                queue.add(value: rightNode)
+            }
+        }
+    }
+}
+
 
