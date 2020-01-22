@@ -144,6 +144,19 @@ extension BinaryTree {
      Iterate in the tree parent and increase the depth variable by one
      **/
     
+    func maxDepth(parent: BinaryTree?) -> Int {
+        guard parent != nil else { return 0 }
+        
+        let leftDepth = maxDepth(parent: parent?.left)
+        let rightDepth = maxDepth(parent: parent?.right)
+        
+        if leftDepth < rightDepth {
+            return rightDepth + 1
+        } else {
+            return leftDepth + 1
+        }
+    }
+    
     // =================================================================
     // Minimun & MAximun node value of the tree
     func minimun() -> BinaryTree? {
@@ -354,14 +367,34 @@ extension BinaryTree {
      assign left/right checking first index with last index using recursion
      **/
     
+    // =================================================================
+    // Mirror the tree
+    func mirrorTree(parent: BinaryTree?) -> BinaryTree? {
+        guard parent != nil else { return nil }
+        
+        mirrorTree(parent: parent?.left)
+        mirrorTree(parent: parent?.right)
+        
+        let temp = parent?.left
+        parent?.left = parent?.right
+        parent?.right = temp
+        
+        return parent
+    }
+    
 }
 
 // Levelorder traverse using a Queue class
+
+// Queue DS
 class Queue<T> {
+    
     var array = [T]()
+    
     func add(value: T) {
         array.append(value)
     }
+    
     func dequeue() -> T? {
         let deque = array.removeFirst()
         return deque as! T
@@ -386,6 +419,18 @@ extension BinaryTree {
             }
         }
     }
+    /*
+     Get the initial/root node, add to the Queue
+           5
+          /  \
+         4    6
+        /  \  / \
+       2   3  7  8
+     Q => 5
+     While the array container is not empty iterate and dequeue the node
+     Check on left/right child and push/add to queue
+     Q => 8|7|6|2|3|4|5
+     **/
 }
 
 
