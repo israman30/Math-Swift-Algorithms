@@ -228,4 +228,77 @@ class LinkedList {
         }
         return prev
     }
+    /*
+     1 -> 2 -> 3 -> nil
+     Hold reference of the current, previus and next node
+     Iterate in the list if exist
+        next becomes current
+        current point to previus
+        previus become current
+        current becomes next
+     return the previus node to reverse the values that point to each other
+     Exp a.)
+     current = 1, prev = nil, next = nil
+         next = 1
+         2 -> nil
+         prev = 2
+         current = 1
+     return prev
+     
+     Exp b.)
+       1   ->  2  ->  3  -> nil
+      curr
+     
+     next = curr
+     2 -> nil
+     prev = 2
+     curr = 1
+       1  <-  2  ->  3  -> nil
+     
+     finish the iteration we have
+     nil  <-  1  <-  2  <- 3
+                          prev
+     
+     return prev and we have
+     3  ->  2  ->  1  ->  nil
+     prev
+     **/
+    
+    // ==========================================================================
+    // Merge two singly linkde list
+    func mergeTwoLinkedList(l1: Node?, l2: Node?) -> Node? {
+        
+        let dummyNode = Node(value: 0)
+        var node = dummyNode
+        var l1 = l1
+        var l2 = l2
+        
+        while l1 != nil && l1 != nil {
+            if l1!.value < l2!.value {
+                node.next = l1
+                l1 = l1?.next
+            } else {
+                node.next = l2
+                l2 = l2?.next
+            }
+            node = node.next!
+        }
+        if l1 != nil {
+            node.next = l1
+        } else {
+            node.next = l2
+        }
+        return node
+    }
+    /*
+     Use a dummy node to point to the head of each list
+     Iterate in the two list if there exist
+        Check if the node of l1 is less than node of l2
+            point the dummy node to the head of l1
+        else
+            do the same with l2
+        dummy becomes next
+        after check each node, check which list is nil then assign the rest of the list to the same
+     **/
+    
 }
