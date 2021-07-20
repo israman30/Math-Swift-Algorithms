@@ -39,7 +39,16 @@ func linearSumOfTwoNumbers(numbers: [Int], target: Int) -> Bool {
 /// Finding the complement number of the sum of 7
 /*
  [:]
- []
+ Find teh sum of 7
+ [1, 2, 3, 4]
+ complement = 7 - 1 -> dict is empty
+ -> [1:0]
+ complement 7 - 2
+ -> [1:0, 2:1]
+ complement 7 - 3
+ -> [1:0, 2:1, 3:2]
+ complement 7 - 4
+ -> [1:0, 2:1, 3:2, 4:3] at this point complement exist
  **/
 /// O(N)
 func sumOfTwoNumber(numbers: [Int], target: Int) -> Bool {
@@ -55,7 +64,6 @@ func sumOfTwoNumber(numbers: [Int], target: Int) -> Bool {
 }
 
 /// Returnning the two number using the complement
-
 /*
  [:]
  Find teh sum of 7
@@ -71,7 +79,7 @@ func sumOfTwoNumber(numbers: [Int], target: Int) -> Bool {
  -> [1:0, 3:1, 2:2, 3:3]
  complement = 7 - 4
  -> [1:0, 3:1, 2:2, 3:3, 4:4] at this point complement exist
- 
+  O(N)
  **/
 func sumOfTwoNumberN(numbers: [Int], target: Int) -> [Int]? {
     var dict = [Int:Int]()
@@ -84,7 +92,5 @@ func sumOfTwoNumberN(numbers: [Int], target: Int) -> [Int]? {
     }
     return nil
 }
-//sumOfTwoNumber(numbers: numbers, target: 11)
 
-sumOfTwoNumberN(numbers: numbers, target: 7)
 
