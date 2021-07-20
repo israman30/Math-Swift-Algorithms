@@ -92,7 +92,50 @@ func sort(left: [Int], right: [Int]) -> [Int] {
 
 
 
+// QUICK SORT
+
+/*
+ [2,5,4,6,0,1,3]
+ pivot = pointer index
+ index < pivot -> less[]
+ index == pivot -> equal[]
+ index > pivot -> greater[]
+ 
+ do on sort(less[]) + equal + sort(greater[])
+ 
+ pivot = 6
+ [2,5,4,6,0,1,3]
+ less[2] equal[6] greater[]
+ less[2, 5] equal[6] greater[]
+ less[2, 5, 4] equal[6] greater[]
+ less[2, 5, 4, 0] equal[6] greater[]
+ less[2, 5, 4, 0, 1] equal[6] greater[]
+ less[2, 5, 4, 0, 1, 3] equal[6] greater[]
+ 
+ do sort(less[2, 5, 4, 0, 1]) + equal + sort(greater[])
+ 
+ **/
+
+func quickSort(array: [Int]) -> [Int] {
+    var less = [Int]()
+    var equal = [Int]()
+    var greater = [Int]()
+    if array.count > 1 {
+        let pivot = array[array.count / 2]
+        for i in array {
+            if i < pivot {
+                less.append(i)
+            } else if i == pivot {
+                equal.append(i)
+            } else {
+                greater.append(i)
+            }
+        }
+        return quickSort(array: less) + equal + quickSort(array: greater)
+    } else {
+        return array
+    }
+}
 
 
-
-
+quickSort(array: [2,5,4,6,0,1,3])
