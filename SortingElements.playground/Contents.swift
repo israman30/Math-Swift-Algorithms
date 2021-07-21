@@ -138,4 +138,3 @@ func quickSort(array: [Int]) -> [Int] {
 }
 
 
-quickSort(array: [2,5,4,6,0,1,3])
